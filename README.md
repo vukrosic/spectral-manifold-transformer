@@ -1,0 +1,17 @@
+# Spectral Manifold Transformer (SMT)
+
+This repository contains the research paper and related materials for the **Spectral Manifold Transformer (SMT)**, a novel architecture that treats sequences as distributions on dynamic Riemannian manifolds.
+
+## Contents
+
+- `paper.tex`: The LaTeX source for the research paper.
+- `agent_instructions.md`: Instructions for the AI assistant (ignored by git).
+- `screenshots/`: Visual assets and diagrams (ignored by git).
+
+## Paper Summary
+
+The Spectral Manifold Transformer proposes a shift from vector-based attention to spectral density operators on dynamic manifolds, achieving $O(1)$ memory scaling for infinite context without expressive decay.
+
+## Repository
+
+The source code and paper can be found at: [https://github.com/vukrosic/spectral-manifold-transformer](https://github.com/vukrosic/spectral-manifold-transformer)

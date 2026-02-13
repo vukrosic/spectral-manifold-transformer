@@ -1,0 +1,22 @@
+# MacOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.pdf
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.blg
+*.bbl
+
+agent_instructions.md
+screenshots/
