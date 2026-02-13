@@ -67,43 +67,9 @@ We propose a paradigm shift: \textbf{Geometric Context Compression}. Instead of 
     \item \textbf{Differentiable Manifold Evolution:} The metric tensor $g$ evolves according to a learned geometric flow, enabling the model to "learn" the optimal geometry for a given task.
 \end{enumerate}
 
+
 \section{The Spectral Manifold Transformer Architecture}
 The architecture of SMT follows a three-stage geometric process: (1) Metric Evolution, (2) Spectral Decomposition, and (3) Eigen-Projection Retrieval.
-
-\begin{figure}[h]
-\centering
-\begin{tikzpicture}[
-    node distance=1.5cm,
-    block/.style={rectangle, draw, blue!70!black, thick, fill=blue!5, text width=2.5cm, align=center, minimum height=1.2cm, rounded corners},
-    cloud/.style={draw, ellipse, fill=gray!5, minimum height=2em, text width=2cm, align=center},
-    arrow/.style={-Stealth, thick, gray!80!black}
-]
-
-% Nodes
-\node (input) [cloud] {Input Tokens $x_1 \dots x_n$};
-\node (flow) [block, right=of input] {Geometric Flow Unit $\partial_t g = \mathcal{T}$};
-\node (solver) [block, right=1.5cm of flow] {Spectral Solver (Perturbative)};
-\node (hub) [block, below=1cm of solver, fill=cyan!5] {Spectral Hub (Context $c_k$)};
-\node (query) [cloud, right=1.2cm of solver] {Query $Q$};
-\node (output) [block, right=of hub] {Retrieval $Y = \sum c_k \phi_k(q)$};
-
-% Background Manifold
-\begin{scope}[on background layer]
-\draw[dashed, gray!30, fill=gray!2] ($(flow.north west)+(-0.3,0.5)$ ) rectangle ($(solver.south east)+(0.3,-2.5)$);
-\node at ($(flow.north)!0.5!(solver.north)+(0,0.8)$) {\footnotesize Latent Manifold $\mathcal{M}$};
-\end{scope}
-
-% Paths
-\draw [arrow] (input) -- (flow);
-\draw [arrow] (flow) -- (solver);
-\draw [arrow] (solver) -- (hub);
-\draw [arrow] (input) |- (hub) node[midway, below, font=\footnotesize] {$V_i$};
-\draw [arrow] (hub) -- (output);
-\draw [arrow] (query) -- (output);
-
-\end{tikzpicture}
-\caption{The SMT Architecture: Tokens warp the latent metric $g$, which in turn updates the spectral basis used for constant-memory context storage.}
-\end{figure}
 
 \section{The Laplace-Beltrami Framework}
 In this section, we derive the mathematical foundations of the Spectral Manifold Transformer.
