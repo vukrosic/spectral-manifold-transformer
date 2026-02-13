@@ -15,4 +15,4 @@ The Spectral Manifold Transformer proposes a shift from vector-based attention t
 
 ## Repository
 
-The source code and paper can be found at: [https://github.com/vukrosic/spectral-manifold-transformer](https://github.com/vukrosic/spectral-manifold-transformer)
+The paper can be found at: [https://github.com/vukrosic/spectral-manifold-transformer](https://github.com/vukrosic/spectral-manifold-transformer)
