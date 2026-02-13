@@ -4,8 +4,10 @@ This repository contains the research paper and related materials for the **Spec
 
 ## Contents
 
-- `paper.tex`: The LaTeX source for the research paper.
-- `paper.pdf`: The PDF version of the research paper.
+- `paper.tex`: The LaTeX source for the research paper (English).
+- `paper.pdf`: The PDF version of the research paper (English).
+- `paper_cn.tex`: The LaTeX source for the research paper (Chinese).
+- `paper_cn.pdf`: The PDF version of the research paper (Chinese).
 
 ## Paper Summary
 
