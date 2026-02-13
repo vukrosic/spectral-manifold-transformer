@@ -5,8 +5,7 @@ This repository contains the research paper and related materials for the **Spec
 ## Contents
 
 - `paper.tex`: The LaTeX source for the research paper.
-- `agent_instructions.md`: Instructions for the AI assistant (ignored by git).
-- `screenshots/`: Visual assets and diagrams (ignored by git).
+- `paper.pdf`: The PDF version of the research paper.
 
 ## Paper Summary
 
